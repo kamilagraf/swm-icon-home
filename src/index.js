@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Root from './views/Root';
+import 'assets/styles/fonts.css';
 import reportWebVitals from './reportWebVitals';
+import AppProviders from 'providers/AppProviders';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProviders>
+      <Root />
+    </AppProviders>
   </React.StrictMode>,
   document.getElementById('root')
 );
