@@ -1,23 +1,6 @@
 import styled from 'styled-components';
 import { Paragraph } from 'components/atoms/Paragraph/Paragraph';
 
-// export const Wrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: ${({ isActive, theme }) => (isActive ? theme.colors.primaryBlue.hundred : theme.colors.shadesOfGray.zero)};
-//   padding: 24px 16px;
-//   border-radius: 16px;
-
-//   &:hover {
-//     background-color: ${({ theme }) => theme.colors.primaryBlue.twenty};
-//   }
-// `;
-
-// export const Content = styled.div``;
-// export const Center = styled.div``;
-
 export const Wrapper = styled.div`
   background-color: ${({ isActive, theme }) => (isActive ? theme.colors.primaryBlue.hundred : theme.colors.shadesOfGray.zero)};
   padding: 16px 24px;

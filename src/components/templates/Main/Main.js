@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper } from './Main.styles';
 import FilterBar from 'components/organisms/FilterBar/FilterBar';

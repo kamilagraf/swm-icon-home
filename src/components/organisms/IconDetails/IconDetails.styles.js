@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100%;
+  width: 100vw;
   background-color: ${({ theme }) => theme.colors.shadesOfGray.zero};
   border-radius: 8px;
   display: grid;
@@ -73,6 +73,14 @@ export const StyledButton = styled.button`
   svg {
     width: 24px;
     height: 24px;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.shadesOfGray.twentyfive};
+  }
+
+  &:active {
+    background-color: ${({ theme }) => theme.colors.primaryBlue.twenty};
   }
 `;
 

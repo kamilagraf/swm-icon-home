@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
-import App from './Root';
+import React from 'react';
+import { render } from 'test-utils';
+import Root from './Root';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Root component', () => {
+  it('Renders the root component', () => {
+    render(<Root />);
+  });
 });

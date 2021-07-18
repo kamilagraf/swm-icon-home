@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { theme } from 'assets/styles/theme';
@@ -18,7 +17,5 @@ const AppProviders = ({ children }) => {
     </ThemeProvider>
   );
 };
-
-AppProviders.propTypes = {};
 
 export default AppProviders;

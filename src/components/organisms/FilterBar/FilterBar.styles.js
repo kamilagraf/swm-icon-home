@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-// display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
 export const Wrapper = styled.div`
-  position: absolute;
   width: 320px;
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.shadesOfGray.zero};
@@ -14,14 +12,16 @@ export const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 1025px) {
-    position: sticky;
-    top: 84px;
     display: block;
+    position: sticky;
+    height: calc(100vh - 80px);
+    top: 80px;
   }
 
   @media screen and (min-width: 1441px) {
     min-width: 400px;
-    top: 104px;
+    height: calc(100vh - 100px);
+    top: 100px;
   }
 `;
 

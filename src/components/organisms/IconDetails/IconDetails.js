@@ -7,6 +7,7 @@ import { Paragraph } from 'components/atoms/Paragraph/Paragraph';
 import { H1, H3 } from 'components/atoms/Headings/Headings';
 import Button from 'components/atoms/Button/Button';
 import { useIcons } from 'hooks/useIcons';
+import toast, { Toaster } from 'react-hot-toast';
 
 const IconDetails = ({ handleClose }) => {
   const { activeSet, activeIcon } = useIcons();
@@ -14,18 +15,29 @@ const IconDetails = ({ handleClose }) => {
 
   const snippetReact = activeIcon && `<${activeIcon.name[0].toUpperCase() + activeIcon.name.slice(1)} set="${activeSet.toLowerCase()}" />`;
 
-  const handleCopySnippet = (e) => navigator.clipboard?.writeText(snippetReact);
-  const handleCopySVG = (e) => ref.current && void navigator.clipboard?.writeText(ref.current.outerHTML);
+  const handleCopySnippet = (e) => {
+    navigator.clipboard?.writeText(snippetReact);
+    toast.success(`Copied to clipboard`, {
+      id: 'copy-snippet',
+    });
+  };
+  const handleCopySVG = (e) => {
+    ref.current && void navigator.clipboard?.writeText(ref.current.outerHTML);
+    toast.success(`${activeSet.toLowerCase()}-${activeIcon.name} copied to clipboard`, {
+      id: 'copy-svg',
+    });
+  };
   const handleDownloadSVG = (e) => {
     if (!ref.current?.outerHTML) return;
     const blob = new Blob([ref.current.outerHTML]);
-    saveAs(blob, `${activeIcon.name}.svg`);
+    saveAs(blob, `${activeSet.toLowerCase()}-${activeIcon.name}.svg`);
   };
 
   if (!activeIcon) return null;
 
   return (
     <Wrapper>
+      <Toaster />
       <activeIcon.Icon size={150} strokeWidth={'1px'} ref={ref} />
       <ContainerWrapper>
         <Header>
