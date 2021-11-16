@@ -1,16 +1,14 @@
 import { useState } from 'react';
 
-const useModal = () => {
-  const [modalState, setModalState] = useState('close');
+const useModal = (initialState = false) => {
+  const [modalState, setModalState] = useState(initialState);
 
-  const handleOpenModalIcon = () => setModalState('modal-icon');
-  const handleOpenModalFilter = () => setModalState('modal-filter');
-  const handleCloseModal = () => setModalState('close');
+  const handleOpenModal = () => setModalState(true);
+  const handleCloseModal = () => setModalState(false);
 
   return {
     modalState,
-    handleOpenModalIcon,
-    handleOpenModalFilter,
+    handleOpenModal,
     handleCloseModal,
   };
 };

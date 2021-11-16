@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { icons } from 'assets/icons/icons';
 
-export const sets = ['Outline', 'Broken', 'Duotone', 'Twocolor', 'Curved'];
+export const sets = ['Outline', 'Broken', 'Duotone', 'Curved'];
 export const categories = ['Arrows', 'Basic actions', 'Essentials', 'Audio, video', 'Low pro actions', 'Random', 'Messages', 'Weather', 'Med'];
 
 export const categoriesCount = icons.reduce((acc, cur) => {

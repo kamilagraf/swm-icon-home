@@ -99,7 +99,7 @@ export const icons = [
   },
   {
     name: 'basket',
-    tags: ['container', 'cart', 'shop', 'bag'],
+    tags: ['container', 'cart', 'shop', 'bag', 'e-commerce'],
     category: 'Essentials',
     Icon: SWMIcons.Basket,
   },
@@ -111,13 +111,13 @@ export const icons = [
   },
   {
     name: 'belldisabled',
-    tags: ['notification', 'church', 'news', 'sound'],
+    tags: ['notification', 'church', 'news', 'sound', 'reminder'],
     category: 'Essentials',
     Icon: SWMIcons.BellDisabled,
   },
   {
     name: 'bell',
-    tags: ['notification', 'church', 'news', 'sound'],
+    tags: ['notification', 'church', 'news', 'sound', 'reminder'],
     category: 'Essentials',
     Icon: SWMIcons.Bell,
   },
@@ -135,13 +135,13 @@ export const icons = [
   },
   {
     name: 'bolt',
-    tags: ['light', 'speed', 'projectile', 'yellow'],
+    tags: ['light', 'speed', 'projectile', 'yellow', 'feature', 'action'],
     category: 'Weather',
     Icon: SWMIcons.Bolt,
   },
   {
     name: 'bonebroken',
-    tags: ['health', 'doctor', 'leg', 'arm'],
+    tags: ['health', 'doctor', 'leg', 'arm', 'spine'],
     category: 'Med',
     Icon: SWMIcons.BoneBroken,
   },
@@ -285,7 +285,7 @@ export const icons = [
   },
   {
     name: 'cast',
-    tags: ['share', 'send'],
+    tags: ['share', 'send', 'stream'],
     category: 'Audio, video',
     Icon: SWMIcons.Cast,
   },
@@ -477,6 +477,7 @@ export const icons = [
   },
   {
     name: 'dislike',
+    tags: ['down', 'vote', 'bad', 'thumb'],
     category: 'Low pro actions',
     Icon: SWMIcons.Dislike,
   },
@@ -524,6 +525,7 @@ export const icons = [
   },
   {
     name: 'download',
+    tags: ['copy', 'transfer', 'move'],
     category: 'Low pro actions',
     Icon: SWMIcons.Download,
   },
@@ -588,6 +590,12 @@ export const icons = [
     Icon: SWMIcons.EyeOpen,
   },
   {
+    name: 'faceid',
+    tags: ['apple', 'biometrics', 'recognition', 'access'],
+    category: 'Random',
+    Icon: SWMIcons.Faceid,
+  },
+  {
     name: 'female',
     tags: ['gender', 'med'],
     category: 'Med',
@@ -595,31 +603,37 @@ export const icons = [
   },
   {
     name: 'filters1',
+    tags: ['browse', 'sort'],
     category: 'Essentials',
     Icon: SWMIcons.Filters1,
   },
   {
     name: 'filters2',
+    tags: ['browse', 'sort'],
     category: 'Essentials',
     Icon: SWMIcons.Filters2,
   },
   {
     name: 'filters3',
+    tags: ['browse', 'sort'],
     category: 'Essentials',
     Icon: SWMIcons.Filters3,
   },
   {
     name: 'flag1',
+    tags: ['banner', 'sign'],
     category: 'Random',
     Icon: SWMIcons.Flag1,
   },
   {
     name: 'flag2',
+    tags: ['banner', 'sign'],
     category: 'Random',
     Icon: SWMIcons.Flag2,
   },
   {
     name: 'flag3',
+    tags: ['banner', 'sign'],
     category: 'Random',
     Icon: SWMIcons.Flag3,
   },
@@ -631,6 +645,7 @@ export const icons = [
   },
   {
     name: 'fullscreen',
+    tags: ['maximize'],
     category: 'Audio, video’',
     Icon: SWMIcons.Fullscreen,
   },
@@ -641,12 +656,6 @@ export const icons = [
     Icon: SWMIcons.Gift1,
   },
   {
-    name: 'gift2',
-    tags: ['present', 'box'],
-    category: 'Random',
-    Icon: SWMIcons.Gift2,
-  },
-  {
     name: 'globe1',
     tags: ['world', 'earth'],
     category: 'Random',
@@ -654,16 +663,19 @@ export const icons = [
   },
   {
     name: 'grid2horizontal',
+    tags: ['boxes', 'mesh'],
     category: 'Random',
     Icon: SWMIcons.Grid2Horizontal,
   },
   {
     name: 'grid2vertical',
+    tags: ['boxes', 'mesh'],
     category: 'Random',
     Icon: SWMIcons.Grid2Vertical,
   },
   {
     name: 'grid4',
+    tags: ['boxes', 'mesh'],
     category: 'Random',
     Icon: SWMIcons.Grid4,
   },
@@ -681,17 +693,19 @@ export const icons = [
   },
   {
     name: 'home1',
+    tags: ['main', 'house'],
     category: 'Essentials',
     Icon: SWMIcons.Home1,
   },
   {
     name: 'home2',
+    tags: ['main', 'house'],
     category: 'Essentials',
     Icon: SWMIcons.Home2,
   },
   {
     name: 'homehospital',
-    tags: ['med', 'cross'],
+    tags: ['med', 'cross', 'main', 'house'],
     category: 'Med',
     Icon: SWMIcons.HomeHospital,
   },
@@ -708,6 +722,7 @@ export const icons = [
   },
   {
     name: 'ice',
+    tags: ['snow'],
     category: 'Weather',
     Icon: SWMIcons.Ice,
   },
@@ -725,18 +740,19 @@ export const icons = [
   },
   {
     name: 'infocircle',
+    tags: ['more', 'details', 'facts', 'data'],
     category: 'Basic actions',
     Icon: SWMIcons.InfoCircle,
   },
   {
     name: 'infosmall',
-    tags: ['details', 'facts', 'data'],
+    tags: ['more', 'details', 'facts', 'data'],
     category: 'Basic actions',
     Icon: SWMIcons.InfoSmall,
   },
   {
     name: 'info',
-    tags: ['details', 'facts', 'data'],
+    tags: ['more', 'details', 'facts', 'data'],
     category: 'Basic actions',
     Icon: SWMIcons.Info,
   },
@@ -753,11 +769,13 @@ export const icons = [
   },
   {
     name: 'like',
+    tags: ['vote', 'up', 'thumb'],
     category: 'Low pro actions',
     Icon: SWMIcons.Like,
   },
   {
     name: 'link',
+    tags: ['hyperlink', 'attach'],
     category: 'Low pro actions',
     Icon: SWMIcons.Link,
   },
@@ -817,11 +835,13 @@ export const icons = [
   },
   {
     name: 'login',
+    tags: ['hyperlink', 'attach'],
     category: 'Low pro actions',
     Icon: SWMIcons.Login,
   },
   {
     name: 'logout',
+    tags: ['sign out'],
     category: 'Low pro actions',
     Icon: SWMIcons.Logout,
   },
@@ -850,6 +870,7 @@ export const icons = [
   },
   {
     name: 'meds',
+    tags: ['medications'],
     category: 'Med',
     Icon: SWMIcons.Meds,
   },
@@ -928,46 +949,55 @@ export const icons = [
   },
   {
     name: 'money',
+    tags: ['cash', 'coin', 'currency'],
     category: 'Messages',
     Icon: SWMIcons.Money,
   },
   {
     name: 'moon',
+    tags: ['night', 'dark'],
     category: 'Weather',
     Icon: SWMIcons.Moon,
   },
   {
     name: 'music',
+    tags: ['play', 'instrument'],
     category: 'Audio, video',
     Icon: SWMIcons.Music,
   },
   {
     name: 'navigation',
+    tags: ['arrow', 'location'],
     category: 'Random',
     Icon: SWMIcons.Navigation,
   },
   {
     name: 'newscreen',
+    tags: ['open', 'extend'],
     category: 'Audio, video',
     Icon: SWMIcons.Newscreen,
   },
   {
     name: 'next',
+    tags: ['right', 'arrow'],
     category: 'Audio, video',
     Icon: SWMIcons.Next,
   },
   {
     name: 'offer',
+    tags: ['discount', 'promotion'],
     category: 'Random',
     Icon: SWMIcons.Offer,
   },
   {
     name: 'package',
+    tags: ['box'],
     category: 'Random',
     Icon: SWMIcons.Package,
   },
   {
     name: 'pause',
+    tags: ['stop'],
     category: 'Audio, video',
     Icon: SWMIcons.Pause,
   },
@@ -978,11 +1008,13 @@ export const icons = [
   },
   {
     name: 'phonecross',
+    tags: ['remove', 'delete', 'cancel'],
     category: 'Audio, video',
     Icon: SWMIcons.PhoneCross,
   },
   {
     name: 'phonedown',
+    tags: ['end', 'close'],
     category: 'Audio, video',
     Icon: SWMIcons.PhoneDown,
   },
@@ -1058,11 +1090,13 @@ export const icons = [
   },
   {
     name: 'power',
+    tags: ['turn on'],
     category: 'Random',
     Icon: SWMIcons.Power,
   },
   {
     name: 'previous',
+    tags: ['left', 'arrow'],
     category: 'Audio, video',
     Icon: SWMIcons.Previous,
   },
@@ -1073,16 +1107,19 @@ export const icons = [
   },
   {
     name: 'questioncircle',
+    tags: ['help', 'support', 'details', 'learn more'],
     category: 'Basic actions',
     Icon: SWMIcons.QuestionCircle,
   },
   {
     name: 'questionsmall',
+    tags: ['help', 'support', 'details', 'learn more'],
     category: 'Basic actions',
     Icon: SWMIcons.QuestionSmall,
   },
   {
     name: 'question',
+    tags: ['help', 'support', 'details', 'learn more'],
     category: 'Basic actions',
     Icon: SWMIcons.Question,
   },
@@ -1199,6 +1236,7 @@ export const icons = [
   },
   {
     name: 'search',
+    tags: ['find'],
     category: 'Essentials',
     Icon: SWMIcons.Search,
   },
@@ -1214,6 +1252,7 @@ export const icons = [
   },
   {
     name: 'settings',
+    tags: ['options'],
     category: 'Essentials',
     Icon: SWMIcons.Settings,
   },
@@ -1229,11 +1268,13 @@ export const icons = [
   },
   {
     name: 'shieldcheck',
+    tags: ['protection', 'success'],
     category: 'Random',
     Icon: SWMIcons.ShieldCheck,
   },
   {
     name: 'shieldcross',
+    tags: ['protection', 'remove', 'delete'],
     category: 'Random',
     Icon: SWMIcons.ShieldCross,
   },
@@ -1244,6 +1285,7 @@ export const icons = [
   },
   {
     name: 'shirt',
+    tags: ['e-commerce', 'fashion'],
     category: 'Random',
     Icon: SWMIcons.Shirt,
   },
@@ -1319,6 +1361,7 @@ export const icons = [
   },
   {
     name: 'sun',
+    tags: ['day', 'light mode'],
     category: 'Weather',
     Icon: SWMIcons.Sun,
   },
@@ -1340,6 +1383,7 @@ export const icons = [
   },
   {
     name: 'tooth',
+    tags: ['dentist'],
     category: 'Med',
     Icon: SWMIcons.Tooth,
   },
@@ -1367,6 +1411,7 @@ export const icons = [
   },
   {
     name: 'trophy',
+    tags: ['award', 'prize'],
     category: 'Random',
     Icon: SWMIcons.Trophy,
   },
@@ -1402,60 +1447,67 @@ export const icons = [
   },
   {
     name: 'user1',
+    tags: ['account', 'person'],
     category: 'Essentials',
     Icon: SWMIcons.User1,
   },
   {
     name: 'user2',
+    tags: ['account', 'person'],
     category: 'Essentials',
     Icon: SWMIcons.User2,
   },
   {
     name: 'usercheck',
-    tags: ['confirmed', 'approved', 'success'],
+    tags: ['account', 'person', 'confirmed', 'approved', 'success'],
     category: 'Essentials',
     Icon: SWMIcons.UserCheck,
   },
   {
     name: 'usercross',
-    tags: ['delete', 'remove'],
+    tags: ['account', 'person', 'delete', 'remove'],
     category: 'Essentials',
     Icon: SWMIcons.UserCross,
   },
   {
     name: 'userinfo',
+    tags: ['account', 'person', 'more', 'details'],
     category: 'Essentials',
     Icon: SWMIcons.UserInfo,
   },
   {
     name: 'userminus',
-    tags: ['delete', 'remove'],
+    tags: ['account', 'person', 'delete', 'remove'],
     category: 'Essentials',
     Icon: SWMIcons.UserMinus,
   },
   {
     name: 'userplus',
-    tags: ['add', 'new'],
+    tags: ['account', 'person', 'add', 'new'],
     category: 'Essentials',
     Icon: SWMIcons.UserPlus,
   },
   {
     name: 'userquestion',
+    tags: ['account', 'person', 'more', 'help', 'support'],
     category: 'Essentials',
     Icon: SWMIcons.UserQuestion,
   },
   {
     name: 'userwarning',
+    tags: ['account', 'person', 'alert'],
     category: 'Essentials',
     Icon: SWMIcons.UserWarning,
   },
   {
     name: 'usersmore',
+    tags: ['account', 'person', 'group', 'duplicate'],
     category: 'Essentials',
     Icon: SWMIcons.UsersMore,
   },
   {
     name: 'users',
+    tags: ['account', 'person', 'group', 'community'],
     category: 'Essentials',
     Icon: SWMIcons.Users,
   },
@@ -1477,21 +1529,25 @@ export const icons = [
   },
   {
     name: 'wand',
+    tags: ['magic', 'stick'],
     category: 'Random',
     Icon: SWMIcons.Wand,
   },
   {
     name: 'warningcircle',
+    tags: ['alert'],
     category: 'Basic actions',
     Icon: SWMIcons.WarningCircle,
   },
   {
     name: 'warningsmall',
+    tags: ['alert'],
     category: 'Basic actions',
     Icon: SWMIcons.WarningSmall,
   },
   {
     name: 'warning',
+    tags: ['alert'],
     category: 'Basic actions',
     Icon: SWMIcons.Warning,
   },

@@ -75,6 +75,10 @@ export const SearchWrapper = styled.div`
     .search-input {
       display: flex;
     }
+
+    a {
+      justify-items: end;
+    }
   }
 
   @media screen and (min-width: 1441px) {

@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ModalWrapper } from './Modal.styles';
-import FilterBar from 'components/organisms/FilterBar/FilterBar';
-import IconDetails from 'components/organisms/IconDetails/IconDetails';
 
-const Modal = ({ modalState, handleClose }) => {
+const Modal = ({ modalState, handleClose, modalType, children }) => {
   return (
     <ModalWrapper
       shouldCloseOnOverlayClick={true}
       appElement={document.getElementById('root')}
-      isOpen={modalState !== 'close'}
+      isOpen={modalState}
       onRequestClose={handleClose}
       style={{
         overlay: {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: modalState === 'modal-filter' ? 'start' : 'center',
-          alignItems: modalState === 'modal-filter' ? 'start' : 'center',
+          justifyContent: modalType === 'modal-filter' ? 'start' : 'center',
+          alignItems: modalType === 'modal-filter' ? 'start' : 'center',
           backgroundColor: '#0002',
           zIndex: '5',
         },
@@ -26,18 +24,16 @@ const Modal = ({ modalState, handleClose }) => {
         },
       }}
     >
-      {modalState === 'modal-filter' ? (
-        <FilterBar handleClose={handleClose} isOpen={modalState === 'modal-filter'} />
-      ) : (
-        <IconDetails handleClose={handleClose} />
-      )}
+      {children}
     </ModalWrapper>
   );
 };
 
 Modal.propTypes = {
-  modalState: PropTypes.string,
+  modalState: PropTypes.bool,
   handleClose: PropTypes.func,
+  modalType: PropTypes.string,
+  children: PropTypes.element,
 };
 
 export default Modal;

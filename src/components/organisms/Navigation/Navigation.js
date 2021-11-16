@@ -4,7 +4,6 @@ import { H1 } from 'components/atoms/Headings/Headings';
 import { ReactComponent as SWMLogo } from 'assets/icons/swm-logo.svg';
 import SearchInput from 'components/atoms/SearchInput/SearchInput';
 import Button from 'components/atoms/Button/Button';
-import { Download } from 'react-swm-icon-pack';
 
 const Navigation = () => {
   return (
@@ -15,8 +14,8 @@ const Navigation = () => {
       </LogoWrapper>
       <SearchWrapper>
         <SearchInput />
-        <Button Icon={Download} as="a" href="https://swmansion.com/downloads/software-mansion-icon-pack.zip" rel="noopener">
-          Download full pack
+        <Button as="a" href="https://www.npmjs.com/package/react-swm-icon-pack" rel="noopener" target="_blank">
+          Check on npm
         </Button>
       </SearchWrapper>
     </Wrapper>

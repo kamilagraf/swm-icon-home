@@ -26,23 +26,27 @@ const FilterBar = ({ handleClose, isOpen }) => {
           <CrossCircle size={36} onClick={handleClose} />
         </Title>
         <H2>Icon styles</H2>
-        {sets.map((set) => (
-          <FilterEntry key={set} onClick={() => setActiveSet(set)} isEnabled={set === activeSet ? true : false}>
-            {set}
-          </FilterEntry>
-        ))}
+        {sets.length
+          ? sets.map((set) => (
+              <FilterEntry key={set} onClick={() => setActiveSet(set)} isEnabled={set === activeSet ? true : false}>
+                {set}
+              </FilterEntry>
+            ))
+          : null}
         <H2>Categories</H2>
-        {categories.map((category) => (
-          <FilterEntry
-            number={categoriesCount[category]}
-            key={category}
-            onClick={() => toggleCategories(category)}
-            isEnabled={activeCategories.includes(category) ? true : false}
-            isCategory
-          >
-            {category}
-          </FilterEntry>
-        ))}
+        {categories.length
+          ? categories.map((category) => (
+              <FilterEntry
+                number={categoriesCount[category]}
+                key={category}
+                onClick={() => toggleCategories(category)}
+                isEnabled={activeCategories.includes(category) ? true : false}
+                isCategory
+              >
+                {category}
+              </FilterEntry>
+            ))
+          : null}
       </FiltersGrid>
     </Wrapper>
   );

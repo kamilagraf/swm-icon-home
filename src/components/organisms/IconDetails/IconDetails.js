@@ -64,7 +64,7 @@ const IconDetails = ({ handleClose }) => {
         </Buttons>
       </ContainerWrapper>
       <div className="btn-close">
-        <CrossCircle strokeWidth={1.5} onClick={handleClose} />
+        <CrossCircle onClick={handleClose} />
       </div>
     </Wrapper>
   );
