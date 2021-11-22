@@ -4,6 +4,7 @@ import { H1 } from 'components/atoms/Headings/Headings';
 import { ReactComponent as SWMLogo } from 'assets/icons/swm-logo.svg';
 import SearchInput from 'components/atoms/SearchInput/SearchInput';
 import Button from 'components/atoms/Button/Button';
+import { ArrowCircleRight } from 'react-swm-icon-pack';
 
 const Navigation = () => {
   return (
@@ -14,7 +15,7 @@ const Navigation = () => {
       </LogoWrapper>
       <SearchWrapper>
         <SearchInput />
-        <Button as="a" href="https://www.npmjs.com/package/react-swm-icon-pack" rel="noopener" target="_blank">
+        <Button Icon={ArrowCircleRight} as="a" href="https://www.npmjs.com/package/react-swm-icon-pack" rel="noopener" target="_blank">
           Check on npm
         </Button>
       </SearchWrapper>

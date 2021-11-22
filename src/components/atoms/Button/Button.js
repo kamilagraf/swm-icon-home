@@ -7,9 +7,7 @@ import { Paragraph } from 'components/atoms/Paragraph/Paragraph';
 const Button = ({ children, Icon, isDisabled, isSecondary, ...props }) => {
   return (
     <StyledButton disabled={isDisabled} {...props} isSecondary={isSecondary}>
-      <Paragraph isSecondary={isSecondary} isMedium>
-        {children}
-      </Paragraph>
+      <Paragraph isSecondary={isSecondary}>{children}</Paragraph>
       {Icon ? isSecondary ? <Icon color={theme.colors.primaryBlue.hundred} /> : <Icon color={theme.colors.shadesOfGray.zero} /> : null}
     </StyledButton>
   );
