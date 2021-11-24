@@ -13,7 +13,7 @@
     "react-hot-toast": "^2.0.0",
     "react-modal": "^3.14.3",
     "react-scripts": "4.0.3",
-    "react-swm-icon-pack": "^1.0.9",
+    "react-swm-icon-pack": "^1.0.12",
     "styled-components": "^5.3.0",
     "web-vitals": "^1.1.2"
   },
@@ -59,6 +59,10 @@
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
+  },
+  "peerDependencies": {
+    "babel-loader": "8.1.0",
+    "webpack": "4.44.2"
   },
   "eslintConfig": {
     "overrides": [

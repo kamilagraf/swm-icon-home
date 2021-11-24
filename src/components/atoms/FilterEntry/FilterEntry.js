@@ -9,7 +9,7 @@ const FilterEntry = ({ children, isEnabled, isCategory, number, ...props }) => {
   return (
     <Wrapper isEnabled={isEnabled} {...props}>
       <Paragraph isLarge>{children}</Paragraph>
-      {isEnabled && isCategory && <Check color={theme.colors.primaryBlue.hundred} />}
+      {isEnabled && <Check color={theme.colors.primaryBlue.hundred} />}
       {!isEnabled && number && <Paragraph isLarge>{number}</Paragraph>}
     </Wrapper>
   );

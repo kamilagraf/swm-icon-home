@@ -38,7 +38,7 @@ const IconDetails = ({ handleClose }) => {
   return (
     <Wrapper>
       <Toaster />
-      <activeIcon.Icon size={150} strokeWidth={'1px'} ref={ref} />
+      <activeIcon.Icon size={150} strokeWidth={'1px'} ref={ref} set={activeSet.toLowerCase()} />
       <ContainerWrapper>
         <Header>
           <H1>{activeIcon.name}</H1>

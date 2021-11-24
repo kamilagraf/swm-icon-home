@@ -33,7 +33,8 @@ export const Wrapper = styled.div.attrs({ className: 'search-input ' })`
     height: 52px;
     width: 500px;
 
-    svg {
+    svg,
+    .btn-delete {
       width: 28px;
       height: 28px;
     }

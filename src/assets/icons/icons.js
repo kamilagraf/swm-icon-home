@@ -650,10 +650,10 @@ export const icons = [
     Icon: SWMIcons.Fullscreen,
   },
   {
-    name: 'gift1',
+    name: 'gift',
     tags: ['present', 'box'],
     category: 'Random',
-    Icon: SWMIcons.Gift1,
+    Icon: SWMIcons.Gift,
   },
   {
     name: 'globe1',
