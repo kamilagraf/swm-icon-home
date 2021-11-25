@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/swm-icon-home/static/css/main.7cde20af.chunk.css",
+    "main.js": "/swm-icon-home/static/js/main.aa82746a.chunk.js",
+    "main.js.map": "/swm-icon-home/static/js/main.aa82746a.chunk.js.map",
+    "runtime-main.js": "/swm-icon-home/static/js/runtime-main.46e90c13.js",
+    "runtime-main.js.map": "/swm-icon-home/static/js/runtime-main.46e90c13.js.map",
+    "static/js/2.6c787a63.chunk.js": "/swm-icon-home/static/js/2.6c787a63.chunk.js",
+    "static/js/2.6c787a63.chunk.js.map": "/swm-icon-home/static/js/2.6c787a63.chunk.js.map",
+    "static/js/3.2f20fce3.chunk.js": "/swm-icon-home/static/js/3.2f20fce3.chunk.js",
+    "static/js/3.2f20fce3.chunk.js.map": "/swm-icon-home/static/js/3.2f20fce3.chunk.js.map",
+    "index.html": "/swm-icon-home/index.html",
+    "static/css/main.7cde20af.chunk.css.map": "/swm-icon-home/static/css/main.7cde20af.chunk.css.map",
+    "static/js/2.6c787a63.chunk.js.LICENSE.txt": "/swm-icon-home/static/js/2.6c787a63.chunk.js.LICENSE.txt",
+    "static/media/amigo.8b60505e.svg": "/swm-icon-home/static/media/amigo.8b60505e.svg",
+    "static/media/swm-logo.634a97b9.svg": "/swm-icon-home/static/media/swm-logo.634a97b9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46e90c13.js",
+    "static/js/2.6c787a63.chunk.js",
+    "static/css/main.7cde20af.chunk.css",
+    "static/js/main.aa82746a.chunk.js"
+  ]
+}
