@@ -14,9 +14,16 @@ export const Wrapper = styled.div`
     width: 100%;
   }
 
+  button p {
+    display: none;
+  }
+
   @media screen and (min-width: 540px) {
     .search-input {
       margin-right: 32px;
+    }
+    button p {
+      display: block;
     }
   }
 
