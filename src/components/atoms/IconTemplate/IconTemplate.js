@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper, StyledParagraph, Center, Content } from './IconTemplate.styles';
 import { theme } from 'assets/styles/theme';
@@ -24,4 +24,4 @@ IconTemplate.propTypes = {
   isActive: PropTypes.bool,
 };
 
-export default IconTemplate;
+export default memo(IconTemplate);
